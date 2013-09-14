@@ -3,28 +3,30 @@
 <head>
 <link rel="stylesheet" type"text/css" href="stylish.css">
 </head>
-<!-- Start of main container div !-->
-<div id="container">
+	<!-- Start of main container div !-->
+	<div id="container">
 
-<!-- Start of header div !-->
-<div id="header">
-<h1>Tina's Place</h1>
-</div>
-<!-- end of header div !-->
+	<!-- Start of header div !-->
+	<div id="header">
+	<h1>Tina's Place</h1>
+	</div>
+	<!-- end of header div !-->
 
-<!-- start of nav menu !-->
-<div id="nav"> 
-Menu
-<br>
-<br>
-Locations
-<br>
-<br>
-About
-<br>
-<br>
-</div> 
-<!-- end nav menu div !-->
+	<!-- start of nav menu !-->
+	<div id="nav"> 
+		<span tabindex="0">
+			Menu
+		</span>
+		<br>
+		<br>
+			Locations
+		<br>
+		<br>
+			About
+		<br>
+		<br>
+	</div> 
+	<!-- end nav menu div !-->
 
 <!-- start of content !-->
 <div id="content">
@@ -32,6 +34,26 @@ About
 <p>I need a way of retrieving a object of a particular type, for instance when the menu is clicked display all sandwich types</p>
 <p>When location is clicked retrieve all location types<p>
 <p>And when about retrieve a html page blabbering about how this place was formed</p>
+
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			swfobject.registerObject("myFlashContent", "9.0.0");
+		</script>
+		<div>
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="600" id="myFlashContent">
+				<param name="movie" value="brunepark.swf" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="brunepark.swf" width="800" height="600">
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflashplayer">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+
 </div> 
 <!-- End the content div !-->
 
